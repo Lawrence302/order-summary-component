@@ -1,0 +1,135 @@
+
+body{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #686D76;
+    /* color: hsl(223, 47%, 23%); */
+}
+.cardContainer{
+    width:350px;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.heroImg{
+    width: 100%;
+    
+}
+
+.info-section{
+    padding: 1rem 2rem;
+    text-align: center;
+    /* border:2px solid black; */
+}
+
+.deals{
+    text-align: left;
+    /* border:1px solid black; */
+    display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   height: auto;
+   margin: 2rem 0rem;
+}
+
+.deals > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.music-icon{
+    width:3rem;
+}
+
+.deals .plan{
+    line-height: 0rem;
+    font-weight: 700;
+    color:black;
+}
+.deals p{
+    line-height: 0rem;
+}
+
+
+
+.deals .optionbtn{
+    color:hsl(245, 75%, 52%);
+    font-size: 0.8rem;
+    
+}
+
+.deals .optionbtn:hover{
+    color:hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    padding: 1rem;
+    color:#fff;
+    font-weight: 500;
+    border:none;
+    background-color: hsl(245, 75%, 52%) ;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancelbtn:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+footer{
+    position: absolute ;
+    bottom:0;
+    padding:1rem;
+}
+
+@media (max-width: 500px){
+
+    
+body{
+    height:auto;
+    width:100%;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    font-size: 16px;
+    
+   
+}
+.cardContainer{
+    margin:auto;
+    margin-top: 2rem;
+    width:90%;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+}
